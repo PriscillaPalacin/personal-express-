@@ -1,0 +1,40 @@
+body {
+  background: blue;
+}
+
+h3 {
+  margin-top: 40px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.foodImg {
+  width: 25%;
+  float: left;
+  margin-left: 6%;
+  border: 1px solid white;
+}
+
+img {
+  height: 300px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.btn {
+  margin-left: 45%;
+}
+
+span {
+  color: white;
+  margin-left: 40%;
+  font-size: 20px;
+}
