@@ -25,167 +25,136 @@
 
       <h2>Pastelitos</h2>
       <img src="../img/pastelitos.jpg" alt="pastelitos">
-      <span>
-        <p><i class="far fa-star"></i>
-          <span>
-            <%= Foods[0].easy %>
-          </span>
-        </p>
-        <p><i class="fas fa-star-half-alt"></i>
-          <span>
-            <%= Foods[0].med %></span>
-        </p>
-        <p><i class="fas fa-star"></i>
-          <span>
-            <%= Foods[0].hard %></span>
-        </p>
-      </span>
+      <p>
+        <%= foods[0].average %>
+      </p>
+      <form class="" action="/add_rate" method="post">
+        <input class="rate" type="radio" name="rate" value=1>One Star</br>
+        <input class="rate" type="radio" name="rate" value=2>Two Star</br>
+        <input class="rate" type="radio" name="rate" value=3>Three Star</br>
+        <input class="rate" type="radio" name="rate" value=4>Four Star</br>
+        <input class="rate" type="radio" name="rate" value=5>Five Star</br>
+        <input type="hidden" name="name" value="<%= foods[0].name %>">
+        <input class="userSubmit" type="submit" value="submit">
+      </form>
+
+
       <span class="ingredients">INGREDIENTS</span>
+      <p>3 cups of flour<br>
 
-      3 cups of flour
+        1 teaspoon salt<br>
 
-      1 teaspoon salt
+        1 teaspoon baking powder<br>
 
-      1 teaspoon baking powder
+        1 1/2 stick of butter<br>
 
-      1 1/2 stick of butter
+        1/2 cup cold water<br>
 
-      1/2 cup cold water
+        2 eggs<br>
 
-      2 eggs
+        <p>Filling of your choice (I used sauteed ground beef and raisins)
 
-      Filling of your choice (I used sauteed ground beef and raisins)
+          Directions
 
-      Directions
+          Mix flour, salt, and baking powder. Add soften butter and mix with a fork. Add 2 eggs and mix with your hands. Add water mixing until you can form a ball. If too wet try adding more flour till you get the right consistency. The dough
+          should
+          be
+          flexible and not stick to your hand. Cover and let rest for 15 minutes.
 
-      Mix flour, salt, and baking powder. Add soften butter and mix with a fork. Add 2 eggs and mix with your hands. Add water mixing until you can form a ball. If too wet try adding more flour till you get the right consistency. The dough should be
-      flexible and not stick to your hand. Cover and let rest for 15 minutes.
+          Roll the dough in a floured surfaced until it is about an 1/8 of an inch thick. Cut circles of about 3 inches of diameter. Roll the excess dough again and keep cutting circles till it’s all gone.
 
-      Roll the dough in a floured surfaced until it is about an 1/8 of an inch thick. Cut circles of about 3 inches of diameter. Roll the excess dough again and keep cutting circles till it’s all gone.
+          Fill half of the circles making sure you leave at least 1/2 inch around. Wet the edges, place a top circle and seal with a fork.
 
-      Fill half of the circles making sure you leave at least 1/2 inch around. Wet the edges, place a top circle and seal with a fork.
-
-      Use a deep pan with very hot oil to fry them until they are golden brown.
-
-      <section>
-        <form class="" action="index.html" method="post">
-          <input type="text" name="" value="">
-          <input type="button" name="" value="">
-        </form>
-      </section>
+          Use a deep pan with very hot oil to fry them until they are golden brown.</p>
 
     </section>
     <section class="foodImg">
       <h2>Sancocho</h2>
       <img src="../img/sancocho.jpg" alt="sancocho">
-      <span>
-        <p>
-          <i class="far fa-star"></i>
-          <span>
-            <%= Foods[1].easy %></span>
-        </p>
-        <p>
-          <i class="fas fa-star-half-alt"></i>
-          <span>
-            <%= Foods[1].med %></span>
-        </p>
-        <p>
-          <i class="fas fa-star"></i>
-          <span>
-            <%= Foods[1].hard %></span>
-        </p>
-      </span>
+      <p>
+        <%= foods[1].average %>
+      </p>
+      <form class="" action="/add_rate" method="post">
+        <input class="rate" type="radio" name="rate" value=1>One Star</br>
+        <input class="rate" type="radio" name="rate" value=2>Two Star</br>
+        <input class="rate" type="radio" name="rate" value=3>Three Star</br>
+        <input class="rate" type="radio" name="rate" value=4>Four Star</br>
+        <input class="rate" type="radio" name="rate" value=5>Five Star</br>
+        <input type="hidden" name="name" value="<%= foods[1].name %>">
+        <input class="userSubmit" type="submit" value="submit">
+      </form>
       <span class="ingredients">INGREDIENTS</span>
-      1 whole chicken, cut into pieces
-      2 smoked pork chops, boneless and chopped
-      1 fresh pork chop, boneless and chopped
-      ½ pound longaniza (Dominican sausage)
-      ½ tablespoon dried oregano
-      1 tablespoon salt
-      1 tablespoon Adobo seasoning
-      1 can tomato sauce
-      2 green plantains, peeled and cut into 1" pieces
-      1 pound yucca, peeled and cut into 1" pieces
-      1 small butternut squash, peeled and cut into 1" pieces
-      1 large carrot, peeled and cut into 1" pieces
-      handful fresh cilantro, chopped
-      1 chicken bouillon cube
-      10 cups water
-      3 tablespoons olive oil
-      1 lime, juiced
-      INSTRUCTIONS
-      Season the chicken, pork chops, and sausage with oregano, salt, and adobo.
-      In a large stock pot over medium heat, sear chicken on all sides, add chopped pork chops and sausage and cook halfway through. Add tomato sauce and cook for 10 minutes.
-      Add the rest of the ingredients except lime juice and olive oil. Cook until squash is tender and then remove squash and carrot pieces. Blend with some of the same liquid and add that puree back into the pot. Stir.
-      Simmer for 15 more minutes and finish seasoning with lime juice and olive oil. Serve with white rice and avocado slices.
-      <section>
-        <form class="" action="index.html" method="post">
-          <input type="text" name="" value="">
-          <input type="button" name="" value="">
-        </form>
-      </section>
+      <p>1 whole chicken, cut into pieces<br>
+        2 smoked pork chops, boneless and chopped<br>
+        1 fresh pork chop, boneless and chopped<br>
+        ½ pound longaniza (Dominican sausage)<br>
+        ½ tablespoon dried oregano<br>
+        1 tablespoon salt<br>
+        1 tablespoon Adobo seasoning<br>
+        1 can tomato sauce<br>
+        2 green plantains, peeled and cut into 1" pieces<br>
+        1 pound yucca, peeled and cut into 1" pieces<br>
+        1 small butternut squash, peeled and cut into 1" pieces<br>
+        1 large carrot, peeled and cut into 1" pieces<br>
+        handful fresh cilantro, chopped<br>
+        1 chicken bouillon cube<br>
+        10 cups water<br>
+        3 tablespoons olive oil<br>
+        1 lime, juiced<br>
+        <span>INSTRUCTIONS</span>
+
+        <p>Season the chicken, pork chops, and sausage with oregano, salt, and adobo.
+          In a large stock pot over medium heat, sear chicken on all sides, add chopped pork chops and sausage and cook halfway through. Add tomato sauce and cook for 10 minutes.
+          Add the rest of the ingredients except lime juice and olive oil. Cook until squash is tender and then remove squash and carrot pieces. Blend with some of the same liquid and add that puree back into the pot. Stir.
+          Simmer for 15 more minutes and finish seasoning with lime juice and olive oil. Serve with white rice and avocado slices.
+        </p>
     </section>
     <section class="foodImg">
       <h2>Mangu</h2>
       <img src="../img/tripleta.jpg" alt="tripleta">
-      <span>
-        <p>
-          <i class="far fa-star"></i>
-          <span>
-            <%= Foods[2].easy %></span>
-        </p>
-        <p>
-          <i class="fas fa-star-half-alt"></i>
-          <span>
-            <%= Foods[2].med %></span>
-        </p>
-        <p>
-          <i class="fas fa-star"></i>
-          <span>
-            <%= Foods[2].hard %></span>
-        </p>
-      </span>
+      <p>
+        <%= foods[2].average %>
+      </p>
+      <form class="" action="/add_rate" method="post">
+        <input class="rate" type="radio" name="rate" value=1>One Star</br>
+        <input class="rate" type="radio" name="rate" value=2>Two Star</br>
+        <input class="rate" type="radio" name="rate" value=3>Three Star</br>
+        <input class="rate" type="radio" name="rate" value=4>Four Star</br>
+        <input class="rate" type="radio" name="rate" value=5>Five Star</br>
+        <input type="hidden" name="name" value="<%= foods[2].name %>">
+        <input class="userSubmit" type="submit" value="submit">
+      </form>
       <span class="ingredients">INGREDIENTS</span>
-      for 6 servings
+      <p>
 
-      1 red onion, sliced into rings
-      salt, to taste
-      1 cup vinegar
-      6 plantains
-      5 cups water
-      2 cups canola oil, divided
-      12 slices dominican frying cheese, queso de freir
-      1 cup flour
-      18 slices dominican salami, salami frito
-      6 tablespoons butter, sliced
-      6 eggs, fried, for serving
-      1 avocado, for serving
-      Place the sliced onions in a medium bowl with a heavy pinch of salt and vinegar. Let soak while preparing the other ingredients, about 1 hour.
-      Peel the plantains and cut into quarters. Place the plantains in a large pot with enough water to cover them by 1 inch (2 cm). Add salt to taste. Bring the plantains to a boil over high heat and cook until they are very tender, about 30
-      minutes.
-      Meanwhile, in a medium skillet, heat the canola oil to 350°F (180°C) over high heat.
-      Coat each slice of Dominican frying cheese in flour, and then place the slices in 1¾ cups (420 ML) canola oil and fry until both sides are golden brown, about 3 minutes. Remove from skillet and transfer to a paper towel-lined plate.
-      Add another tablespoon of oil to the skillet and fry the salami until brown and crispy on both sides, 4 minutes. Remove from the skillet, transfer to a paper towel-lined plate.
-      Wipe out the skillet, and add another tablespoon of oil to the pan. Pour in the onions and their soaking liquid. Sauté until the onions are soft and bright pink, about 10 minutes.
-      Once the plantains are tender, scoop them out from the water and place in a separate large bowl, and keep the starchy boiling liquid warm on the stove.
-      Add the butter and about 1 cup (240 ml) of the hot starchy plantain liquid. Mash the cooked plantains together until it is creamy and smooth. Add more liquid as needed.
-      Serve the mangú with the fried cheese, fried salami, avocado, and fried eggs. Garnish with pickled onions.
-      Enjoy!
-      <section>
-        <form class="" action="index.html" method="post">
-          <input type="text" name="" value="">
-          <input type="button" name="" value="">
-        </form>
-      </section>
+        1 red onion, sliced into rings<br>
+        salt, to taste<br>
+        1 cup vinegar<br>
+        6 plantains<br>
+        5 cups water<br>
+        2 cups canola oil, divided<br>
+        12 slices dominican frying cheese, queso de freir<br>
+        1 cup flour<br>
+        18 slices dominican salami, salami frito<br>
+        6 tablespoons butter, sliced<br>
+        6 eggs, fried, for serving<br>
+        1 avocado, for serving<br>
+        <p>Place the sliced onions in a medium bowl with a heavy pinch of salt and vinegar. Let soak while preparing the other ingredients, about 1 hour.
+          Peel the plantains and cut into quarters. Place the plantains in a large pot with enough water to cover them by 1 inch (2 cm). Add salt to taste. Bring the plantains to a boil over high heat and cook until they are very tender, about 30
+          minutes.
+          Meanwhile, in a medium skillet, heat the canola oil to 350°F (180°C) over high heat.
+          Coat each slice of Dominican frying cheese in flour, and then place the slices in 1¾ cups (420 ML) canola oil and fry until both sides are golden brown, about 3 minutes. Remove from skillet and transfer to a paper towel-lined plate.
+          Add another tablespoon of oil to the skillet and fry the salami until brown and crispy on both sides, 4 minutes. Remove from the skillet, transfer to a paper towel-lined plate.
+          Wipe out the skillet, and add another tablespoon of oil to the pan. Pour in the onions and their soaking liquid. Sauté until the onions are soft and bright pink, about 10 minutes.
+          Once the plantains are tender, scoop them out from the water and place in a separate large bowl, and keep the starchy boiling liquid warm on the stove.
+          Add the butter and about 1 cup (240 ml) of the hot starchy plantain liquid. Mash the cooked plantains together until it is creamy and smooth. Add more liquid as needed.
+          Serve the mangú with the fried cheese, fried salami, avocado, and fried eggs. Garnish with pickled onions.
+          Enjoy!</p>
     </section>
-
 
   </section>
 
-
-
   <script src="main.js"></script>
-
 </body>
 
 </html>

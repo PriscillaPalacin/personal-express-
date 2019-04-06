@@ -6,7 +6,7 @@ const MongoClient = require('mongodb').MongoClient
 var db, collection;
 
 const url = "mongodb+srv://fried:fried@fried-7vefi.mongodb.net/test?retryWrites=true";
-const dbName = "fried";
+const dbName = "reviews";
 
 app.listen(3000, () => {
     MongoClient.connect(url, { useNewUrlParser: true }, (error, client) => {
@@ -25,11 +25,47 @@ app.use(express.static('public'))
 
 app.get('/', (req, res) => {
   //console.log(db)
-  db.collection('fried').find().toArray((err, result) => {
+  db.collection('foods').find().toArray((err, foods) => {
+    // collecting all the foods
     if (err) return console.log(err)
-    console.log(result[0].easy)
-    res.render('index.ejs', {Foods: result})
+    foods = foods.map(food => {
+      let average = 0;
+      let rates = food.rates;
+      if(rates.length > 0) {
+        const ratesSum = rates.reduce((memo, current) => {
+          return memo += current;
+        });
+        average = ratesSum/rates.length;
+      }
+
+      return {_id: food._id, name: food.name, average: average}
+    })
+
+    res.render('index.ejs', {foods})
   })
+})
+
+app.post("/add_rate", (req, res) => {
+  console.log(req.body)
+  const name = req.body.name
+  const rate = req.body.rate
+  if (rate){
+    db.collection("foods").update(
+      { name },
+      { $push: { rates: parseInt(rate) } },
+    (err, result) => {
+      if (err) return console.log(err)
+      console.log(result)
+      res.redirect("/")
+    })
+  } else {
+    console.log("hellooo")
+    res.redirect("/")
+  }
+  // db.collection('fried').save({name: req.body.name, msg: req.body.msg, easy: 0, medium:0, hard:0}, (err, result) => {
+  //   if (err) return console.log(err)
+  //   console.log('saved to database')
+  // })
 })
 
 app.post('/fried', (req, res) => {
