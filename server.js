@@ -13,6 +13,7 @@ app.listen(3000, () => {
         if(error) {
             throw error;
         }
+        
         db = client.db(dbName);
         console.log("Connected to `" + dbName + "`!");
     });
